@@ -1,0 +1,16 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+certifi==2021.10.8
+cloudpickle==2.0.0
+gym==0.23.1
+gym-notices==0.0.6
+importlib-metadata==4.11.3
+numpy==1.22.3
+panda3d==1.10.11
+panda3d-gltf==0.13
+panda3d-simplepbr==0.10
+pip==21.2.4
+scipy==1.8.0
+wheel==0.37.1
+zipp==3.8.0

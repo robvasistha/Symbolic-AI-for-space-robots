@@ -1,0 +1,12 @@
+Logging to Training/Logs/PPO_200Klegacy/_2
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 56.9      |
+|    ep_rew_mean     | -9.923533 |
+|    reward          | -357      |
+| time/              |           |
+|    fps             | 243       |
+|    iterations      | 1         |
+|    time_elapsed    | 8         |
+|    total_timesteps | 2048      |
+----------------------------------

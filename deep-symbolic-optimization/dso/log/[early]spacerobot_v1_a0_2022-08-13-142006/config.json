@@ -1,0 +1,164 @@
+{
+   "experiment": {
+      "logdir": "./log",
+      "seed": 0,
+      "cmd": "/vol/research/dsospacerobot/Y3_Project/spacerobot_v1/deep-symbolic-optimization/dso/dso/run.py dso/config/spacerobotconfig.json",
+      "timestamp": "2022-08-13-142006",
+      "task_name": "spacerobot_v1_a0",
+      "save_path": "./log/spacerobot_v1_a0_2022-08-13-142006"
+   },
+   "task": {
+      "task_type": "control",
+      "env": "spacerobot_v1",
+      "anchor": "/vol/research/dsospacerobot/Y3_Project/spacerobot_v1/deep-symbolic-optimization/dso/dso/task/control/data/spacerobot_v1/PPO_200Klegacy.zip",
+      "action_spec": [
+         null,
+         "anchor",
+         "anchor",
+         "anchor",
+         "anchor",
+         "anchor",
+         "anchor",
+         "anchor",
+         "anchor",
+         "anchor"
+      ],
+      "n_episodes_train": 10,
+      "n_episodes_test": 1000,
+      "success_score": 999999.0,
+      "function_set": [
+         "add",
+         "sub",
+         "mul",
+         "div",
+         "sin",
+         "cos",
+         "exp",
+         "log",
+         1.0,
+         5.0,
+         10.0
+      ],
+      "protected": false,
+      "fix_seeds": true,
+      "episode_seed_shift": 0,
+      "env_kwargs": {},
+      "reward_scale": true,
+      "multiobject": false,
+      "decision_tree_threshold_set": [],
+      "algorithm": "ppo"
+   },
+   "training": {
+      "n_epochs": null,
+      "n_samples": 1000,
+      "batch_size": 100,
+      "epsilon": 0.1,
+      "baseline": "R_e",
+      "alpha": 0.5,
+      "b_jumpstart": false,
+      "n_cores_batch": 10,
+      "complexity": "token",
+      "const_optimizer": "scipy",
+      "const_params": {},
+      "verbose": true,
+      "debug": 0,
+      "early_stopping": false,
+      "hof": 100,
+      "use_memory": false,
+      "memory_capacity": 1000.0,
+      "warm_start": null,
+      "memory_threshold": null,
+      "save_all_epoch": false,
+      "save_summary": true,
+      "save_positional_entropy": false,
+      "save_pareto_front": true,
+      "save_cache": false,
+      "save_cache_r_min": 0.9,
+      "save_freq": 1,
+      "save_token_count": false
+   },
+   "state_manager": {
+      "type": "hierarchical",
+      "observe_action": false,
+      "observe_parent": true,
+      "observe_sibling": true,
+      "observe_dangling": false,
+      "embedding": false,
+      "embedding_size": 8
+   },
+   "controller": {
+      "max_length": 256,
+      "cell": "lstm",
+      "num_layers": 1,
+      "num_units": 32,
+      "initializer": "zeros",
+      "learning_rate": 0.001,
+      "optimizer": "adam",
+      "entropy_weight": 0.01,
+      "entropy_gamma": 0.85,
+      "pqt": false,
+      "pqt_k": 10,
+      "pqt_batch_size": 1,
+      "pqt_weight": 200.0,
+      "pqt_use_pg": false,
+      "summary": true
+   },
+   "gp_meld": {
+      "run_gp_meld": false,
+      "verbose": false,
+      "generations": 20,
+      "p_crossover": 0.5,
+      "p_mutate": 0.5,
+      "tournament_size": 5,
+      "train_n": 50,
+      "mutate_tree_max": 3
+   },
+   "prior": {
+      "count_constraints": false,
+      "relational": {
+         "targets": [],
+         "effectors": [],
+         "relationship": null,
+         "on": false
+      },
+      "length": {
+         "min_": 4,
+         "max_": 30,
+         "on": true
+      },
+      "repeat": {
+         "tokens": "const",
+         "min_": null,
+         "max_": 3,
+         "on": false
+      },
+      "inverse": {
+         "on": true
+      },
+      "trig": {
+         "on": true
+      },
+      "const": {
+         "on": true
+      },
+      "no_inputs": {
+         "on": true
+      },
+      "uniform_arity": {
+         "on": true
+      },
+      "soft_length": {
+         "loc": 10,
+         "scale": 5,
+         "on": true
+      },
+      "language_model": {
+         "weight": null,
+         "on": false
+      }
+   },
+   "postprocess": {
+      "show_count": 5,
+      "save_plots": true
+   }
+}
