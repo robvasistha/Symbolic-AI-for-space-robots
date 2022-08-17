@@ -18,13 +18,16 @@ All of the requirements for DSO training can be found in the folder called deep-
 It is recommended to create a virtual environment to host all of these libraries.
 
 This can be done by the following:
-`           conda create -n <ENVNAME> python=3.9
+`
+           conda create -n <ENVNAME> python=3.9
 
            conda activate <ENVNAME>
 
            pip install -r requirements.txt
+
 `
 **It should be noted that DSO requires Tensorflow 1.14 which is only supported up to Python 3.7 so you may need to create two virtual environments.**
+
 The CSVs containing the results that were used in the graphs for the dissertation can be found in the following folders:
 Training/logs/test_200K
 deep-symbolic-optimisation/dso/logs 
