@@ -1,6 +1,6 @@
 # Symbolic AI for Space Robots
 
-##Summary
+
 This repository contains all of the project files for Symbolic AI for Space Robots
 
 This repository makes use of two sub-repositories which are linked below:
